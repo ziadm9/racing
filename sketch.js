@@ -151,7 +151,7 @@ function draw(){
         let oldY = (npcs[i].y)
         npcs.splice(i,1)
         npcs.push(new npc(carTypes[Math.floor(random(0,3))], (-100-(900-oldY))))
-        //crash.play()
+        crash.play()
         score-=1
     }
     image(npcs[i].color,npcs[i].x,npcs[i].y, 75, 125)
